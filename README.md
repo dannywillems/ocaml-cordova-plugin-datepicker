@@ -35,7 +35,7 @@ opam install cordova-plugin-datepicker
 opam pin add cordova-plugin-datepicker https://github.com/dannywillems/ocaml-cordova-plugin-datepicker.git
 ```
 
-and to compile your project, use
+To compile your project, use
 ```Shell
 ocamlfind ocamlc -c -o [output_file] -package gen_js_api -package ocaml-js-stdlib -package cordova-plugin-datepicker [...] -linkpkg [other arguments]
 ```
