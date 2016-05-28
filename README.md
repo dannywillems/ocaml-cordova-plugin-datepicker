@@ -23,14 +23,14 @@ Don't forget to switch to a compiler **>= 4.03.0**.
 opam switch 4.03.0
 ```
 
-If you add
+* If you added
 [ocaml-cordova-plugin-list](https://github.com/dannywillems/ocaml-cordova-plugin-list)
 as opam package provider, you can use
 ```
 opam install cordova-plugin-datepicker
 ```
 
-Else, you can use opam by pinning the repository with
+* Else, you can use opam by pinning the repository with
 ```Shell
 opam pin add cordova-plugin-datepicker https://github.com/dannywillems/ocaml-cordova-plugin-datepicker.git
 ```
