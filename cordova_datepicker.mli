@@ -49,18 +49,11 @@ val create_options :  ?mode:(mode [@js.default Date])                 ->
 (* -------------------------------------------------------------------------- *)
 
 (* -------------------------------------------------------------------------- *)
-class date_picker : Ojs.t ->
-  object
-    inherit Ojs.obj
-
-    method show : ?options:(options [@js.default create_options ()])  ->
-                  (Js_date.t -> unit)                                 ->
-                  (string -> unit)                                    ->
-                  unit
-  end
+val show :
+  ?options:(options [@js.default create_options ()])  ->
+  (Js_date.t -> unit)                                 ->
+  (string -> unit)                                    ->
+  unit
+[@@js.global "datePicker.show"]
 (* -------------------------------------------------------------------------- *)
 
-(* -------------------------------------------------------------------------- *)
-val t : unit -> date_picker
-[@@js.get "datePicker"]
-(* -------------------------------------------------------------------------- *)
